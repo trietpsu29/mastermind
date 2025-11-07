@@ -38,10 +38,10 @@ class Game
   def human_make
     print '🔐 Enter your secret code: '
     make = @human.play
-    round = 12
+    round = 1
     feedback = {}
 
-    while round > 0
+    while round <= 12
       puts "\n🔁 Round #{round}"
       guess = @computer.code_guess(feedback)
       puts "🤖 Computer's guess: #{guess}"
@@ -53,7 +53,7 @@ class Game
         @computer.score += 1
         return
       end
-      round -= 1
+      round += 1
     end
 
     puts "\n🎉 Computer failed to guess your code!"
