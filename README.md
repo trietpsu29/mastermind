@@ -30,7 +30,7 @@ This is the eleventh project from [The Odin Project](https://github.com/TheOdinP
 
 - A new game starts after every round.
 
-- Enter valid input only — wrong input might break the
+- Enter valid input only — invalid input may cause errors.
 
 ## 🛠️ Skills Learned
 
