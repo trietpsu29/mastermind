@@ -6,15 +6,14 @@ class Game
   attr_reader :human, :computer
 
   def initialize
-    super
     @human = Human.new
     @computer = Computer.new
   end
 
   def human_guess
     make = @computer.code_make
-    round = 12
-    while round > 0
+    round = 1
+    while round <= 12
       puts "\n🔁 Round #{round}"
       print '🎯 Enter your guess: '
       guess = @human.play
