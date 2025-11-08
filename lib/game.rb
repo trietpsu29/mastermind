@@ -13,8 +13,8 @@ class Game
 
   def human_guess
     make = @computer.code_make
-    round = 12
-    while round > 0
+    round = 1
+    while round <= 12
       puts "\n🔁 Round #{round}"
       print '🎯 Enter your guess: '
       guess = @human.play
